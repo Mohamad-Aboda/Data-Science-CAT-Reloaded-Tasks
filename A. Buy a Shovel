@@ -1,0 +1,14 @@
+# problem link   https://codeforces.com/contest/732/problem/A
+n, k = map(int, input().split())
+i = 1
+cnt = 0
+max = 9 
+sum = 0
+for  x in range(0, max):
+  sum = n * i
+  cnt+=1
+  if(sum % 10 == 0 or (sum - k ) % 10 == 0):
+    print(cnt)
+    break
+  i+= 1  
+ 
